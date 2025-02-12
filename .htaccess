@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^test$ /index.php [L]
+# Redirect to index.php if the file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

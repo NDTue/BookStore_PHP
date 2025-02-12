@@ -1,0 +1,277 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #333; /* Dark background for the navbar */
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    color: #f39c12 !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f39c12 !important; /* Gold hover effect */
+}
+
+.navbar-toggler-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828859.png"); /* Custom icon */
+}
+
+/* Navbar Collapse */
+.collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1); /* Make icon white */
+}
+
+/* Header Text */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+/* Search & Filter Forms */
+.search-form, .filter-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.search-form input[type="text"], .filter-form select, .btn {
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form .search-dropdown {
+    width: 175px; /* Adjust the width */
+    padding: 4px 8px; /* Reduce padding for a compact look */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    border-radius: 5px; /* Optional: Rounded corners for consistency */
+}
+
+.btn {
+    background: linear-gradient(145deg, #f39c12, #5e70d4);
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e67e22;
+}
+
+
+/* Card Styles */
+.card {
+    background: linear-gradient(145deg, #f8f9fa, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #495057;
+}
+
+/* Shopping Cart Icon Positioning */
+.card-footer {
+    position: relative;
+    padding-top: 40px;
+    background: transparent;
+    border-top: none;
+}
+
+.card-footer a.shopping-cart-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #007bff;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.card-footer a.shopping-cart-icon:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+.fa-shopping-cart {
+    font-size: 1.5rem;
+}
+
+/* Shopping cart item card */ 
+
+.custom-cart-table {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.custom-cart-table th {
+    background: linear-gradient( #3b80ff, #ffa726);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+}
+
+.custom-cart-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.custom-cart-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.custom-cart-table .remove-item {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.custom-cart-table .cart-item-image {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Grand Total Section */
+.grand-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.grand-total h4 {
+    margin: 0;
+}
+
+/* Button Styling */
+.btn-primary, .btn-success {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Table Responsive Design */
+@media (max-width: 768px) {
+    .custom-cart-table th, .custom-cart-table td {
+        padding: 8px;
+    }
+
+    .custom-cart-table {
+        font-size: 14px;
+    }
+}
+
+/* Customize the quantity box size and button styles */
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control button {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+
+/* Book Image Styling */
+.book-image {
+    width: 250px; /* Uniform width */
+    height: 350px; /* Uniform height */
+    object-fit: cover; /* Ensure images don't stretch */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Alert for no book found */
+.alert-warning {
+    background: linear-gradient(135deg, #3b80ff, #ffa726); /* Gradient colors */
+    color: #ffffff; /* Text color */
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a nice effect */
+}
+
+.form-signin {
+    background-color: linear-gradient(to right, #cbbf11, #2575fc);
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue */
+    border-color: #004085; /* Even darker border */
+}
